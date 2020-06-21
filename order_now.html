@@ -2,9 +2,24 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Chicago Style Pizza</title>
   </head>
   <body>
-hello world
+<!--datalist: allows the user to input and auto-complete their answer. Built using label and option elements (see below).
+  List is the same as id to connect the dataset.-->
+<label>Choose your delivery suburb:
+  <input list=choosesuburb name="Yoursuburb"/>
+</label>
+<datalist id="choosesuburb">
+  <option value="Collingwood"></option>
+  <option value="Fitzroy"></option>
+  <option value="Carlton"></option>
+  <option value="Brunswick"></option>
+</datalist>
+<br><br>
+<!--Input type number - test on alternate browsers-->
+Qauntity: <input type="number" name="pizzaNo" />
+
+
   </body>
 </html>
