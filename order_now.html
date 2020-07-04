@@ -2,24 +2,91 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Chicago Style Pizza</title>
+    <title>Chicago Style</title>
   </head>
   <body>
+    <header>
+      <h1>Chicago Style</h1>
+    </header>
+    <nav>
+      <ul>
+    <!--<li><a href="./">Home</a></li>-->
+        <li><a href="about_us.html">Our Story</a></li>
+        <li><a href="order_now.html">Order Now</a></li>
+        <!--Link through to menu / order online -->
+    <!-- <li><a href="bookings.html">Bookings</a></li>-->
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+<div class="storehrs">
+  <h3>We are open...</h3>
+  <ul>
+    <li>Monday 4pm to 9pm</li>
+    <li>Tuesday 4pm to 9pm</li>
+    <li>Wednesday 4pm to 9pm</li>
+    <li>Thursday 3pm to 10pm</li>
+    <li>Friday 3pm to 12am</li>
+    <li>Saturday 3pm to 12am</li>
+    <li>Sunday 4pm to 9pm</li>
+  </ul>
+</div>
+
+<div class="menu">
+  <h2>Menu</h2>
+  <h3>Pizza - $20</h3>
+  <p>One size fits all! All our de-lish pizzas are 20" and packed with flav-our. Sorry - no half n half!</p>
+  <ul>
+    <li>Margartia</li>
+    <li>Pepperoni</li>
+    <li>Pineapple</li>
+    <li>Meatlovers</li>
+    <li>New Yorker</li>
+  </ul>
+  <h3>Snacks n' Sauce</h3>
+  <ul>
+    <li>Speciality fries ($5)</li>
+    <li>Garlic bread ($7)</li>
+    <li>Chicago Style hot sauce ($10)</li>
+  </ul>
+  <h3>Drinks</h3>
+  <ul>
+    <li>Soft drink (cans)</li>
+    <li>Soft drink (1.25l)</li>
+    <li>Sparkling water</li>
+  </ul>
+</div>
+<footer>
+  <ul>
+    <li><a href="about_us.html">Our Story</a></li>
+    <li><a href="media.html">Follow Us</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+</footer>
+
 <!--datalist: allows the user to input and auto-complete their answer. Built using label and option elements (see below).
   List is the same as id to connect the dataset.-->
-<label>Choose your delivery suburb:
-  <input list=choosesuburb name="Yoursuburb"/>
-</label>
-<datalist id="choosesuburb">
-  <option value="Collingwood"></option>
-  <option value="Fitzroy"></option>
-  <option value="Carlton"></option>
-  <option value="Brunswick"></option>
-</datalist>
-<br><br>
-<!--Input type number - test on alternate browsers-->
-Qauntity: <input type="number" name="pizzaNo" />
+<!--<div class="deliverysuburb">
+  <label>Choose your delivery suburb:
+    <input list=choosesuburb name="Yoursuburb"/>
+  </label>
+  <datalist id="choosesuburb">
+    <option value="Collingwood"></option>
+    <option value="Fitzroy"></option>
+    <option value="Carlton"></option>
+    <option value="Brunswick"></option>
+  </datalist>
+</div>
 
+<br><br>-->
+<!--Input type number - test on alternate browsers-->
+<!--
+Qauntity: <input type="number" name="pizzaNo" />
+<br><br>
+<div class="Submitform">
+  <input type="submit" name="Submit" />
+  <input type="reset" name="Reset" />
+</div>
+-->
 
   </body>
 </html>
