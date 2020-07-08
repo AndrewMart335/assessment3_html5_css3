@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Modak&display=swap" rel="stylesheet">
-    <title>Chicago Stlye Pizza</title>
-  </head>
-  <body>
-<header>
-  <div class="container">
-    <img src="img/chicago_style_logo.png" alt="chicago style logo" class="logo">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Modak&display=swap" rel="stylesheet">
+  <title>Chicago Stlye Pizza</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="img/logo/Asset8-8.png" alt="chicago style logo" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -19,64 +19,70 @@
           <li><a href="media.html">Follow Us</a> </li>
         </ul>
       </nav>
-  </div>
-</header>
-<aside class="aside">
-  <h3>We are open...</h3>
-  <ul>
-    <li>Monday 4pm to 9pm</li>
-    <li>Tuesday 4pm to 9pm</li>
-    <li>Wednesday 4pm to 9pm</li>
-    <li>Thursday 3pm to 10pm</li>
-    <li>Friday 3pm to 12am</li>
-    <li>Saturday 3pm to 12am</li>
-    <li>Sunday 4pm to 9pm</li>
-  </ul>
-</aside>
-<div class="menu">
-  <h2>Menu</h2>
-  <h3>Pizza - $20</h3>
-  <p>One size fits all! All our de-lish pizzas are 20" and packed with flav-our. <br><br> Sorry - no half n half!</p>
-  <ul>
-    <li>Margartia</li>
-    <li>Pepperoni</li>
-    <li>Pineapple</li>
-    <li>Meatlovers</li>
-    <li>New Yorker</li>
-  </ul>
-  <h3>Snacks n' Sauce</h3>
-  <ul>
-    <li>Speciality fries ($5)</li>
-    <li>Garlic bread ($7)</li>
-    <li>Chicago Style hot sauce ($10)</li>
-  </ul>
-  <h3>Drinks</h3>
-  <ul>
-    <li>Soft drink (cans) ($3)</li>
-    <li>Soft drink (1.25l) ($6)</li>
-    <li>Sparkling water ($3.50)</li>
-  </ul>
-  <h4>Place your order online via our <a href="contact.html">order form here</a> or <br>call us on 09 9856 7883 to place your order or visit us in store.</h4>
-</div>
-<footer>
-  <ul>
-    <li><a href="media.html">Follow Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</footer>
-
-<!--datalist: allows the user to input and auto-complete their answer. Built using label and option elements (see below).
+    </div>
+  </header>
+  <aside class="aside">
+    <h3 id="openhrs">We are open</h3>
+    <ul id="hrslst">
+      <li>Monday - 4pm to 9pm</li>
+      <li>Tuesday - 4pm to 9pm</li>
+      <li>Wednesday - 4pm to 9pm</li>
+      <li>Thursday - 3pm to 10pm</li>
+      <li>Friday - 3pm to 12am</li>
+      <li>Saturday - 3pm to 12am</li>
+      <li>Sunday - 4pm to 9pm</li>
+    </ul>
+  </aside>
+  <main>
+    <div class="row">
+      <div class="columnpizza">
+        <h3>Pizza - $20</h3>
+        <p>One size fits all! All our de-lish pizzas are 20" and packed with flav-our.</p>
+        <h4>Margartia</h4>
+        <p>Tomato sauce, mozzarella and oregano</p>
+        <h4>Mexican</h4>
+        <p>Tomato sauce, mozzarella, hot salami, capsicum, olives and chilli</p>
+        <h4>Super Special</h4>
+        <p>Tomato sauce, mozzarella, ham, mushroom, pineapple and prawns</p>
+        <h4>Meatlovers</h4>
+        <p>Tomato sauce, mozzarella, ham, bacon, beef, salami and BBQ sauce</p>
+        <h4>New Yorker</h4>
+        <p>Tomato sauce, mozzarella, oregano, sausage and salami</p>
+      </div>
+      <div class="column">
+        <h3>Snacks n' Sauce</h3>
+        <p>Speciality fries ($5</p>
+        <p>Garlic bread ($7)</p>
+        <p>Chicago Style hot sauce ($10)</p>
+      </div>
+      <div class="column">
+        <h3>Drinks</h3>
+        <p>Soft drink (cans) ($3)</p>
+        <p>Soft drink (1.25l) ($6)</p>
+        <p>Sparkling water ($3.50)</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <ul>
+      <li id="address">Chicago Style Melbourne 123 Portillo St Brunswick 3056 VIC</li>
+      <li><a href="media.html">Follow Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li id="phone">09 9856 7883</li>
+    </ul>
+  </footer>
+  <!--datalist: allows the user to input and auto-complete their answer. Built using label and option elements (see below).
   List is the same as id to connect the dataset.-->
-<!--<div class="deliverysuburb">
+  <!--<div class="deliverysuburb">
   <label>Choose your delivery suburb:
-    <input list=choosesuburb name="Yoursuburb"/>
-  </label>
-  <datalist id="choosesuburb">
-    <option value="Collingwood"></option>
-    <option value="Fitzroy"></option>
-    <option value="Carlton"></option>
-    <option value="Brunswick"></option>
-  </datalist>
+  <input list=choosesuburb name="Yoursuburb"/>
+</label>
+<datalist id="choosesuburb">
+<option value="Collingwood"></option>
+<option value="Fitzroy"></option>
+<option value="Carlton"></option>
+<option value="Brunswick"></option>
+</datalist>
 </div>
 
 <br><br>-->
@@ -85,10 +91,9 @@
 Qauntity: <input type="number" name="pizzaNo" />
 <br><br>
 <div class="Submitform">
-  <input type="submit" name="Submit" />
-  <input type="reset" name="Reset" />
+<input type="submit" name="Submit" />
+<input type="reset" name="Reset" />
 </div>
 -->
-
-  </body>
+</body>
 </html>

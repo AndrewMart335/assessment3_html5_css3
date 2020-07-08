@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Modak&display=swap" rel="stylesheet">
-    <title>Chicago Stlye Pizza</title>
-  </head>
-  <body>
-<header>
-  <div class="container">
-    <img src="img/chicago_style_logo.png" alt="chicago style logo" class="logo">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Modak&display=swap" rel="stylesheet">
+  <title>Chicago Stlye Pizza</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="img/logo/Asset8-8.png" alt="chicago style logo" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -19,51 +19,49 @@
           <li><a href="media.html">Follow Us</a> </li>
         </ul>
       </nav>
-  </div>
-</header>
-<form>
-  <div class="contactus">
-    <div class="contactdetails">
-      <h3>Contact us or place an order</h3><br>
-        First Name: <input type="text" name="" value=""> <br><br>
-        Last Name: <input type="text" name="" value=""> <br><br>
-        Email Address: <input type="email" name="emailpizza"/> <br><br>
     </div>
-    <div class="delivery_address">
-      <label>Select your delivery suburb:</label>
-      <input list="delivsub" name="suburbs">
-        <datalist id="delivsub">
-         <option value="Collingwood"></option>
-         <option value="Brunswick"></option>
-         <option value="Fitzroy"></option>
-         <option value="East Brunswick"></option>
-         <option value="Abbotsford"></option>
-    </datalist> <br><br>
-    <div class="marketing">
-      <label>How did you hear about us?</label>
-      <select class="selt5" name="marketing">
-        <option value="">Select option</option>
-        <option value="">Online</option>
-        <option value="">Word of mouth</option>
-        <option value="">Social media</option>
-        <option value="">Promotion</option>
-      </select> <br><br>
-    <div class="textbox">
-      <label>Place an order or leave us a message below:</label><br><br>
-      <textarea name="textbox" rows="8" cols="60"></textarea>
-    </div>
-    </div> <br><br>
-    <div class="submitform">
-      <input type="submit" name="submit" value="Submit" />
-      <input type="reset" name="clear" value="Clear" />
-    </div>
+  </header>
+  <main>
+    <form>
+      <div class="contactdetails">
+        <h3>Contact us or place an order</h3>
+        First Name: <br>
+        <input type="text" name="firstname" value=""> <br><br>
+        Last Name: <br>
+        <input type="text" name="lastname" value=""> <br><br>
+        Email Address: <br>
+        <input type="email" name="emailpizza" value=""> <br><br>
+        Phone: <br>
+        <input type="tel" name="phone" value=""> <br><br>
+      </div>
+      <div class="marketing">
+        <label>Delivery Suburb (if applicable):</label>
+        <select class="selt5" name="marketing">
+          <option value="">Select</option>
+          <option value="">Collingwood</option>
+          <option value="">Brunswick</option>
+          <option value="">Fitzroy</option>
+          <option value="">East Brunswick</option>
+          <option value="">Abbotsford</option>
+        </select> <br><br>
+      </div>
+      <div class="textbox">
+        <label>Place an order or leave us a message below:</label><br><br>
+        <textarea name="textbox" rows="6" cols="60" required></textarea>
+      </div><br>
+      <div class="buttons">
+        <input type="submit" value="Submit" formaction="response.html">
+        <input type="reset" value="Clear">
+      </div>
     </form>
-  </div>
-<footer>
-  <ul>
-    <li><a href="media.html">Follow Us</a></li>
-    <li><a href="contact.html">Contact Us</a></li>
-  </ul>
-</footer>
-  </body>
+  </main>
+  <footer>
+    <ul>
+      <li id="address">Chicago Style Melbourne 123 Portillo St Brunswick 3056 VIC</li>
+      <li><a href="media.html">Follow Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li id="phone">09 9856 7883</li>
+    </ul>
+  </footer>
+</body>
 </html>
