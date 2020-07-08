@@ -1,5 +1,5 @@
 html body {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
   font-style: normal;
   text-align: center;
@@ -203,6 +203,10 @@ input[type=reset] {
   text-align: left;
 }
 
+#description {
+  font-style: normal;
+}
+
 .columnpizza {
   width: 33.33%;
   float: left;
@@ -211,10 +215,12 @@ input[type=reset] {
   padding-top: 1.5rem;
   padding-left: 6rem;
   text-align: left;
+  line-height: 15px;
 }
 
 .columnpizza p {
   font-style: italic;
+  font-size: 18px;
 }
 
 .column p {
